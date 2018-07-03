@@ -59,18 +59,3 @@ def t_error(t):
     t.lexer.skip(1)
 
 lexer = lex.lex()
-
-'''
-name = input("Escriba el nombre del archivo con el código fuente ")
-file = open(name, 'r')
-line = file.read()
-lexer.input(line)
-while True:
-    tok = lexer.token()
-    if not tok:
-        break
-    print(tok)
-'''
-
-#To run: ../Trials/trial1.fake
-#To run: ../Trials/trial2.fake

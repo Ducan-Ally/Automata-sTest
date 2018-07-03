@@ -1,5 +1,6 @@
 import ply.yacc as yacc
 from FakeCompiler.lexer import tokens
+from FakeCompiler.fakeStructure import *
 
 class bcolors:
     HEADER = '\033[95m'
@@ -13,17 +14,22 @@ class bcolors:
 
 def p_Start1(p):
     'FakeProgram : names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation'
-    #niark.addStatement(p[1])
+    fakeStructure.addStatemet(Metodo(p[1],p[5]))
 
 def p_Start2(p):
     'FakeProgram : PRINT NAME continuation'
-    #niark.addStatement(p[1])
+    fakeStructure.addStatemet(Print(p[2]))
 
 def p_names1(p):
     'names : NAME COMMA names'
+    p[0] = list()
+    p[0].extend(p[3])
+    p[0].append(p[1])
 
 def p_names2(p):
     'names : NAME'
+    p[0] = list()
+    p[0].append(p[1])
 
 def p_continuation1(p):
     'continuation : NEWLINE FakeProgram'
@@ -40,6 +46,7 @@ def p_error(p):
 def p_empty(p):
     'empty : '
 
+fakeStructure = FakeStructures()
 parser = yacc.yacc()
 name = input("Escriba el nombre del archivo con el código fuente ")
 file = open(name, 'r')
@@ -48,3 +55,8 @@ while True:
     parser.parse(line)
     break
 
+fakeStructure.printStatements()
+
+#To run: ../Trials/trial1.fake
+#To run: ../Trials/trial2.fake
+#To run: ../Trials/trial3.fake

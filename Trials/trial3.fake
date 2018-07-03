@@ -1,0 +1,4 @@
+ornitorrinco, orden_66, es42 = metodo(3.8)
+print es42 es42
+print ornitorrinco ornitorrinco
+print orden_66 orden_66
