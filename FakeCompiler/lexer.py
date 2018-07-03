@@ -2,6 +2,16 @@
 
 import ply.lex as lex
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
 #Reserved words
 reserved = {
     'metodo' : 'METODO',
@@ -45,11 +55,10 @@ t_RIGHTPARENTHESIS = r'\)'
 t_ignore = r' '
 
 def t_error(t):
-    print("Lexical error in line",t.lexer.lineno,"-- Invalid character:",t.value[:1])
+    print(bcolors.FAIL+"Lexical error in line"+bcolors.ENDC,bcolors.HEADER+str(t.lexer.lineno)+bcolors.ENDC,"--",bcolors.FAIL+"Invalid character:"+bcolors.ENDC,bcolors.WARNING+t.value[:1]+bcolors.ENDC)
     t.lexer.skip(1)
 
 lexer = lex.lex()
-
 
 '''
 name = input("Escriba el nombre del archivo con el código fuente ")
@@ -62,3 +71,6 @@ while True:
         break
     print(tok)
 '''
+
+#To run: ../Trials/trial1.fake
+#To run: ../Trials/trial2.fake

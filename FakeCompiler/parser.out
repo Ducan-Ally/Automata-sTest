@@ -1,0 +1,190 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> FakeProgram
+Rule 1     FakeProgram -> names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation
+Rule 2     FakeProgram -> PRINT NAME continuation
+Rule 3     names -> NAME COMMA names
+Rule 4     names -> NAME
+Rule 5     continuation -> NEWLINE FakeProgram
+Rule 6     continuation -> empty
+Rule 7     empty -> <empty>
+
+Terminals, with rules where they appear
+
+COMMA                : 3
+EQUAL                : 1
+INT                  : 1
+LEFTPARENTHESIS      : 1
+METODO               : 1
+NAME                 : 2 3 4
+NEWLINE              : 5
+PRINT                : 2
+RIGHTPARENTHESIS     : 1
+error                : 
+
+Nonterminals, with rules where they appear
+
+FakeProgram          : 5 0
+continuation         : 1 2
+empty                : 6
+names                : 1 3
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . FakeProgram
+    (1) FakeProgram -> . names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation
+    (2) FakeProgram -> . PRINT NAME continuation
+    (3) names -> . NAME COMMA names
+    (4) names -> . NAME
+
+    PRINT           shift and go to state 3
+    NAME            shift and go to state 4
+
+    FakeProgram                    shift and go to state 1
+    names                          shift and go to state 2
+
+state 1
+
+    (0) S' -> FakeProgram .
+
+
+
+state 2
+
+    (1) FakeProgram -> names . EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation
+
+    EQUAL           shift and go to state 5
+
+
+state 3
+
+    (2) FakeProgram -> PRINT . NAME continuation
+
+    NAME            shift and go to state 6
+
+
+state 4
+
+    (3) names -> NAME . COMMA names
+    (4) names -> NAME .
+
+    COMMA           shift and go to state 7
+    EQUAL           reduce using rule 4 (names -> NAME .)
+
+
+state 5
+
+    (1) FakeProgram -> names EQUAL . METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation
+
+    METODO          shift and go to state 8
+
+
+state 6
+
+    (2) FakeProgram -> PRINT NAME . continuation
+    (5) continuation -> . NEWLINE FakeProgram
+    (6) continuation -> . empty
+    (7) empty -> .
+
+    NEWLINE         shift and go to state 10
+    $end            reduce using rule 7 (empty -> .)
+
+    continuation                   shift and go to state 9
+    empty                          shift and go to state 11
+
+state 7
+
+    (3) names -> NAME COMMA . names
+    (3) names -> . NAME COMMA names
+    (4) names -> . NAME
+
+    NAME            shift and go to state 4
+
+    names                          shift and go to state 12
+
+state 8
+
+    (1) FakeProgram -> names EQUAL METODO . LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation
+
+    LEFTPARENTHESIS shift and go to state 13
+
+
+state 9
+
+    (2) FakeProgram -> PRINT NAME continuation .
+
+    $end            reduce using rule 2 (FakeProgram -> PRINT NAME continuation .)
+
+
+state 10
+
+    (5) continuation -> NEWLINE . FakeProgram
+    (1) FakeProgram -> . names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation
+    (2) FakeProgram -> . PRINT NAME continuation
+    (3) names -> . NAME COMMA names
+    (4) names -> . NAME
+
+    PRINT           shift and go to state 3
+    NAME            shift and go to state 4
+
+    FakeProgram                    shift and go to state 14
+    names                          shift and go to state 2
+
+state 11
+
+    (6) continuation -> empty .
+
+    $end            reduce using rule 6 (continuation -> empty .)
+
+
+state 12
+
+    (3) names -> NAME COMMA names .
+
+    EQUAL           reduce using rule 3 (names -> NAME COMMA names .)
+
+
+state 13
+
+    (1) FakeProgram -> names EQUAL METODO LEFTPARENTHESIS . INT RIGHTPARENTHESIS continuation
+
+    INT             shift and go to state 15
+
+
+state 14
+
+    (5) continuation -> NEWLINE FakeProgram .
+
+    $end            reduce using rule 5 (continuation -> NEWLINE FakeProgram .)
+
+
+state 15
+
+    (1) FakeProgram -> names EQUAL METODO LEFTPARENTHESIS INT . RIGHTPARENTHESIS continuation
+
+    RIGHTPARENTHESIS shift and go to state 16
+
+
+state 16
+
+    (1) FakeProgram -> names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS . continuation
+    (5) continuation -> . NEWLINE FakeProgram
+    (6) continuation -> . empty
+    (7) empty -> .
+
+    NEWLINE         shift and go to state 10
+    $end            reduce using rule 7 (empty -> .)
+
+    continuation                   shift and go to state 17
+    empty                          shift and go to state 11
+
+state 17
+
+    (1) FakeProgram -> names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation .
+
+    $end            reduce using rule 1 (FakeProgram -> names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation .)
+
