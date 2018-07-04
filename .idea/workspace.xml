@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8f279b-369a-42d8-bfb1-cf050dc6e8f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FakeCompiler/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/lexer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FakeCompiler/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,48 +13,46 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Automata_sTest$lexer.coverage" NAME="lexer Coverage Results" MODIFIED="1530583556177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
-    <SUITE FILE_PATH="coverage/Automata_sTest$parser.coverage" NAME="parser Coverage Results" MODIFIED="1530654635609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
+    <SUITE FILE_PATH="coverage/Automata_sTest$parser.coverage" NAME="parser Coverage Results" MODIFIED="1530671121402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
+    <SUITE FILE_PATH="coverage/Automata_sTest$semantic.coverage" NAME="semantic Coverage Results" MODIFIED="1530674357318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="fakeStructure.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FakeCompiler/fakeStructure.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-84">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="semantic.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trial4.fake" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trials/trial4.fake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trial1.fake" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trials/trial1.fake">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Niark/parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5267">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trial3.fake" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Trials/trial3.fake">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -86,7 +82,10 @@
         <option value="$PROJECT_DIR$/Trials/trial3.fake" />
         <option value="$PROJECT_DIR$/FakeCompiler/lexer.py" />
         <option value="$PROJECT_DIR$/FakeCompiler/fakeStructure.py" />
+        <option value="$PROJECT_DIR$/FakeCompiler/semantic'.py" />
         <option value="$PROJECT_DIR$/FakeCompiler/parser.py" />
+        <option value="$PROJECT_DIR$/FakeCompiler/semantic.py" />
+        <option value="$PROJECT_DIR$/Trials/trial4.fake" />
       </list>
     </option>
   </component>
@@ -150,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parser">
+  <component name="RunManager" selected="Python.semantic">
     <configuration name="lexer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Automata-sTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,12 +188,33 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="semantic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Automata-sTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FakeCompiler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FakeCompiler/semantic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.lexer" />
       <item itemvalue="Python.parser" />
+      <item itemvalue="Python.semantic" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.semantic" />
         <item itemvalue="Python.parser" />
         <item itemvalue="Python.lexer" />
       </list>
@@ -215,7 +235,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -267,20 +286,6 @@
         <state relative-caret-position="-3403" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Trials/trial1.fake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Trials/trial3.fake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Trials/trial2.fake">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -302,10 +307,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Trials/trial3.fake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Niark/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5267">
+        <state relative-caret-position="819">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Niark/semantic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2079">
+          <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="25" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -314,17 +346,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FakeCompiler/fakeStructure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="-84">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
+    <entry file="file://$PROJECT_DIR$/Trials/trial1.fake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trials/trial4.fake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="30" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>

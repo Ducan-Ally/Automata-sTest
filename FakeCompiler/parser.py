@@ -12,6 +12,15 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+def parseMethod():
+    parser = yacc.yacc()
+    name = input("Escriba el nombre del archivo con el código fuente ")
+    file = open(name, 'r')
+    line = file.read()
+    while True:
+        parser.parse(line)
+        break
+
 def p_Start1(p):
     'FakeProgram : names EQUAL METODO LEFTPARENTHESIS INT RIGHTPARENTHESIS continuation'
     fakeStructure.addStatemet(Metodo(p[1],p[5]))
@@ -47,16 +56,3 @@ def p_empty(p):
     'empty : '
 
 fakeStructure = FakeStructures()
-parser = yacc.yacc()
-name = input("Escriba el nombre del archivo con el código fuente ")
-file = open(name, 'r')
-line = file.read()
-while True:
-    parser.parse(line)
-    break
-
-fakeStructure.printStatements()
-
-#To run: ../Trials/trial1.fake
-#To run: ../Trials/trial2.fake
-#To run: ../Trials/trial3.fake

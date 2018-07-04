@@ -1,0 +1,6 @@
+ornitorrinco, orden_66, es42 = metodo(5)
+ornitorrinco, orden_66, es42 = metodo(7)
+ornitorrinco, orden_66, es42, hola13, nada, fake98 = metodo(3)
+print es42
+print ornitorrinco
+print orden_66
