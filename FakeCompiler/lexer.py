@@ -1,6 +1,7 @@
 # coding=utf-8
 
 import ply.lex as lex
+import sys
 
 class bcolors:
     HEADER = '\033[95m'
@@ -56,6 +57,8 @@ t_ignore = r' '
 
 def t_error(t):
     print(bcolors.FAIL+"Lexical error in line"+bcolors.ENDC,bcolors.HEADER+str(t.lexer.lineno)+bcolors.ENDC,"--",bcolors.FAIL+"Invalid character:"+bcolors.ENDC,bcolors.WARNING+t.value[:1]+bcolors.ENDC)
+    sys.exit(0)
     t.lexer.skip(1)
+
 
 lexer = lex.lex()

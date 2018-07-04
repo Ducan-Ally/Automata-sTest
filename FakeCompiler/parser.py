@@ -1,6 +1,7 @@
 import ply.yacc as yacc
-from FakeCompiler.lexer import tokens
+from FakeCompiler.lexer import *
 from FakeCompiler.fakeStructure import *
+import sys
 
 class bcolors:
     HEADER = '\033[95m'
@@ -11,6 +12,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
 
 def parseMethod():
     parser = yacc.yacc()
@@ -48,9 +50,9 @@ def p_continuation2(p):
 
 def p_error(p):
     if p:
-        print(bcolors.FAIL+"Error:" +bcolors.ENDC ,bcolors.HEADER + p.type+ bcolors.ENDC, bcolors.BOLD + "", p.value,"" + bcolors.ENDC, bcolors.WARNING + "Sucedió en la línea:" + bcolors.ENDC, bcolors.UNDERLINE + "" ,p.lineno,"" + bcolors.ENDC)
+        print(bcolors.FAIL+"An error occurred before character" +bcolors.ENDC, bcolors.BOLD + "", p.value,"" + bcolors.ENDC, bcolors.WARNING + "Line:" + bcolors.ENDC, bcolors.UNDERLINE + "" ,p.lineno,"" + bcolors.ENDC)
          # Just discard the token and tell the parser it's okay.
-
+        sys.exit(0)
 
 def p_empty(p):
     'empty : '

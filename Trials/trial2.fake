@@ -1,4 +1,4 @@
-pato, gat@ = metodo(4)
+pato, gaty@ = metodo(4)
 print pato
 print gat@
 print perro

@@ -1,5 +1,6 @@
 from FakeCompiler.parser import *
 from FakeCompiler.fakeStructure import *
+import sys
 
 class bcolors:
     HEADER = '\033[95m'
@@ -29,14 +30,17 @@ def metodoChecker(metodo):
             if metodo.variableCounter == len(metodo.variables):
                 variablesList.extend(metodo.variables)
             else:
-                print(bcolors.FAIL + "Recieved parameters:" + bcolors.ENDC, len(metodo.variables),
+                print(bcolors.FAIL + "Received parameters:" + bcolors.ENDC, len(metodo.variables),
                       bcolors.FAIL + "expected:" + bcolors.ENDC, metodo.variableCounter)
+                sys.exit(0)
         else:
-            print(bcolors.FAIL + "The number of variables have to be between 1 and 5, but instead recieved:" + bcolors.ENDC,
+            print(bcolors.FAIL + "The number of variables have to be between 1 and 5, but instead received:" + bcolors.ENDC,
                 len(metodo.variables))
+            sys.exit(0)
     else:
-        print(bcolors.FAIL + "The metodo parameter have to be between 1 and 5, but instead recieved:" + bcolors.ENDC,
+        print(bcolors.FAIL + "The metodo parameter have to be between 1 and 5, but instead received:" + bcolors.ENDC,
               metodo.variableCounter)
+        sys.exit(0)
 
 def printChecker(p):
     found = False
@@ -46,3 +50,4 @@ def printChecker(p):
 
     if not found:
         print(bcolors.FAIL + "The variable:"+bcolors.ENDC,p.name,bcolors.FAIL + "doesnt exist."+bcolors.ENDC)
+        sys.exit(0)

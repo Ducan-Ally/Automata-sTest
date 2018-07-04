@@ -22,9 +22,9 @@ def generateMetodoCode(metodo):
     dataList.extend(metodo.variables)
     file.write(".data\n")
     for i in range(0,len(dataList)):
-        file.write(dataList[i]+"I: .asciiz \"Insert digit for "+dataList[i]+": \"\n")
+        file.write(dataList[i]+"I: .asciiz \"Insert digit for "+dataList[i]+": \\n\"\n")
         dataListI.append(dataList[i]+"I")
-        file.write(dataList[i]+"O: .asciiz \"The value in " + dataList[i] + " is: \"\n")
+        file.write(dataList[i]+"O: .asciiz \"The value in " + dataList[i] + " is: \\n\"\n")
         dataListO.append(dataList[i]+"O")
 
     file.write(".text\n")
@@ -41,18 +41,16 @@ def generateMetodoCode(metodo):
 
 def generatePrintCode(p):
     i = 0
-    while (dataList[i] != p.name):
+    while (i < len(dataList) and dataList[i] != p.name):
         i = i + 1
-        if(i > len(dataList)):
-            break
+    if i < len(dataList) :
+        file.write("li $v0, 4\n")
+        file.write("la $a0, " + dataListO[i] + "\n")
+        file.write("syscall\n")
 
-    file.write("li $v0, 4\n")
-    file.write("la $a0, " + dataListO[i] + "\n")
-    file.write("syscall\n")
-
-    file.write("li $v0, 1\n")
-    file.write("move $a0, $s"+ str(i)+"\n")
-    file.write("syscall\n")
+        file.write("li $v0, 1\n")
+        file.write("move $a0, $s"+ str(i)+"\n")
+        file.write("syscall\n")
 
 codeGeneration()
 

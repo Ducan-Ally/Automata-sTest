@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cb8f279b-369a-42d8-bfb1-cf050dc6e8f4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeCompiler/codeGeneration.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/codeGeneration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeCompiler/compiledFake.asm" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/compiledFake.asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeCompiler/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/lexer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FakeCompiler/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FakeCompiler/semantic.py" beforeDir="false" afterPath="$PROJECT_DIR$/FakeCompiler/semantic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trials/trial2.fake" beforeDir="false" afterPath="$PROJECT_DIR$/Trials/trial2.fake" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,28 +19,19 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Automata_sTest$lexer.coverage" NAME="lexer Coverage Results" MODIFIED="1530583556177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
-    <SUITE FILE_PATH="coverage/Automata_sTest$codeGeneration.coverage" NAME="codeGeneration Coverage Results" MODIFIED="1530719060966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
+    <SUITE FILE_PATH="coverage/Automata_sTest$codeGeneration.coverage" NAME="codeGeneration Coverage Results" MODIFIED="1530743977085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
     <SUITE FILE_PATH="coverage/Automata_sTest$parser.coverage" NAME="parser Coverage Results" MODIFIED="1530671121402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
     <SUITE FILE_PATH="coverage/Automata_sTest$semantic.coverage" NAME="semantic Coverage Results" MODIFIED="1530674357318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FakeCompiler" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="fakeStructure.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FakeCompiler/fakeStructure.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="lexer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakeCompiler/lexer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="semantic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="13" selection-start-line="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="588">
+              <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#16#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +40,8 @@
       <file leaf-file-name="parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="252">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -54,23 +49,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codeGeneration.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FakeCompiler/codeGeneration.py">
+      <file leaf-file-name="semantic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+            <state relative-caret-position="-17">
+              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compiledFake.asm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FakeCompiler/compiledFake.asm">
+      <file leaf-file-name="codeGeneration.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FakeCompiler/codeGeneration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,6 +78,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trial2.fake" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Trials/trial2.fake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -105,16 +112,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Trials/trial1.fake" />
-        <option value="$PROJECT_DIR$/Trials/trial2.fake" />
-        <option value="$PROJECT_DIR$/FakeCompiler/lexer.py" />
         <option value="$PROJECT_DIR$/FakeCompiler/fakeStructure.py" />
         <option value="$PROJECT_DIR$/FakeCompiler/semantic'.py" />
         <option value="$PROJECT_DIR$/Trials/trial4.fake" />
+        <option value="$PROJECT_DIR$/Trials/trial3.fake" />
+        <option value="$PROJECT_DIR$/FakeCompiler/compiledFake.asm" />
+        <option value="$PROJECT_DIR$/FakeCompiler/codeGeneration.py" />
+        <option value="$PROJECT_DIR$/FakeCompiler/lexer.py" />
         <option value="$PROJECT_DIR$/FakeCompiler/semantic.py" />
         <option value="$PROJECT_DIR$/FakeCompiler/parser.py" />
-        <option value="$PROJECT_DIR$/Trials/trial3.fake" />
-        <option value="$PROJECT_DIR$/FakeCompiler/codeGeneration.py" />
-        <option value="$PROJECT_DIR$/FakeCompiler/compiledFake.asm" />
+        <option value="$PROJECT_DIR$/Trials/trial2.fake" />
       </list>
     </option>
   </component>
@@ -125,8 +132,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="372" />
-    <option name="y" value="-9" />
+    <option name="x" value="371" />
+    <option name="y" value="-10" />
     <option name="width" value="960" />
     <option name="height" value="1030" />
   </component>
@@ -288,26 +295,26 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,8 +324,56 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FakeCompiler/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/fakeStructure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="13" selection-start-line="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/compiledFake.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trials/trial1.fake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/codeGeneration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Niark/lexer.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -337,20 +392,6 @@
         <state relative-caret-position="-3403" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Trials/trial2.fake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakeCompiler/lexer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Niark/ASTStructure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
@@ -362,9 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -372,9 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2079">
           <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -382,33 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakeCompiler/fakeStructure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="13" selection-start-line="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -426,6 +434,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/fakeStructure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/semantic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FakeCompiler/lexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+          <folding>
+            <element signature="e#16#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FakeCompiler/compiledFake.asm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -435,11 +480,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FakeCompiler/codeGeneration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="270">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="30" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trials/trial2.fake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
