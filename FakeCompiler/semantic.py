@@ -11,9 +11,10 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+variablesList = list()
+
 def semantic():
     parseMethod()
-    fakeStructure.printStatements()
 
     for x in range(0, len(fakeStructure.statements)):
         if type(fakeStructure.statements[x]) is Metodo:
@@ -45,11 +46,3 @@ def printChecker(p):
 
     if not found:
         print(bcolors.FAIL + "The variable:"+bcolors.ENDC,p.name,bcolors.FAIL + "doesnt exist."+bcolors.ENDC)
-
-variablesList = list()
-semantic()
-
-#To run: ../Trials/trial1.fake
-#To run: ../Trials/trial2.fake
-#To run: ../Trials/trial3.fake
-#To run: ../Trials/trial4.fake
