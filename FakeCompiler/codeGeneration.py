@@ -22,9 +22,9 @@ def generateMetodoCode(metodo):
     dataList.extend(metodo.variables)
     file.write(".data\n")
     for i in range(0,len(dataList)):
-        file.write(dataList[i]+"I: .asciiz \"Insert digit for "+dataList[i]+": \\n\"\n")
+        file.write(dataList[i]+"I: .asciiz \"\\nInsert digit for "+dataList[i]+": \"\n")
         dataListI.append(dataList[i]+"I")
-        file.write(dataList[i]+"O: .asciiz \"The value in " + dataList[i] + " is: \\n\"\n")
+        file.write(dataList[i]+"O: .asciiz \"\\nThe value in " + dataList[i] + " is: \"\n")
         dataListO.append(dataList[i]+"O")
 
     file.write(".text\n")

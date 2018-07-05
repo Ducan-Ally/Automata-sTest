@@ -1,4 +1,6 @@
-pato, gaty@ = metodo(4)
+pato, gaty, perro, p, pe = metodo(5)
 print pato
-print gat@
+print p
 print perro
+print pe
+print gaty
